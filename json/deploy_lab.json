@@ -1,0 +1,70 @@
+[
+  {
+    "VMName": "DC",
+    "VMPath": "V:\\VM",
+    "Generation": 2,
+    "MemoryStartupBytes": 4294967296,
+    "DynamicMemoryEnabled": true,
+    "SwitchName": "vInternal",
+    "ProcessorCount": 4,
+    "AutomaticStartAction": "Nothing",
+    "AutomaticCheckpointsEnabled": false
+  },
+  {
+    "VMName": "MEMBER",
+    "VMPath": "V:\\VM",
+    "Generation": 2,
+    "MemoryStartupBytes": 4294967296,
+    "DynamicMemoryEnabled": true,
+    "SwitchName": "vInternal",
+    "ProcessorCount": 2,
+    "AutomaticStartAction": "Nothing",
+    "AutomaticCheckpointsEnabled": false
+  }
+  ,
+  {
+    "VMName": "RDC",
+    "VMPath": "V:\\VM",
+    "Generation": 2,
+    "MemoryStartupBytes": 4294967296,
+    "DynamicMemoryEnabled": true,
+    "SwitchName": "vInternal",
+    "ProcessorCount": 2,
+    "AutomaticStartAction": "Nothing",
+    "AutomaticCheckpointsEnabled": false
+  }
+  ,
+  {
+    "VMName": "FDC",
+    "VMPath": "V:\\VM",
+    "Generation": 2,
+    "MemoryStartupBytes": 4294967296,
+    "DynamicMemoryEnabled": true,
+    "SwitchName": "vInternal",
+    "ProcessorCount": 2,
+    "AutomaticStartAction": "Nothing",
+    "AutomaticCheckpointsEnabled": false
+  },
+  {
+    "VMName": "CLIENT",
+    "VMPath": "V:\\VM",
+    "Generation": 2,
+    "MemoryStartupBytes": 2147483648,
+    "DynamicMemoryEnabled": true,
+    "SwitchName": "vInternal",
+    "ProcessorCount": 2,
+    "AutomaticStartAction": "Nothing",
+    "AutomaticCheckpointsEnabled": false
+  },
+  {
+    "VMName": "WIN11",
+    "VMPath": "V:\\VM",
+    "Generation": 2,
+    "MemoryStartupBytes": 2147483648,
+    "DynamicMemoryEnabled": true,
+    "SwitchName": "vInternal",
+    "ProcessorCount": 2,
+    "AutomaticStartAction": "Nothing",
+    "AutomaticCheckpointsEnabled": false
+  }
+]
