@@ -2,5 +2,3 @@
 # -IncludeAllSubFeature ensures all related subcomponents are installed.
 # -IncludeManagementTools installs the AD DS management console and tools.
 Add-WindowsFeature -Name "Ad-Domain-Services" -IncludeAllSubFeature -IncludeManagementTools
-
-

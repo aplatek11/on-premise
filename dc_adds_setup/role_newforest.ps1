@@ -3,7 +3,7 @@
 # -SafeModeAdministratorPassword sets the Directory Services Restore Mode (DSRM) password.
 # -Confirm:$false suppresses the confirmation prompt for unattended execution.
 Install-ADDSForest `
-    -DomainName "LAB.PRI" `
+    -DomainName "<<DOMAIN>>" `
     -InstallDns `
-    -SafeModeAdministratorPassword (ConvertTo-SecureString "P@ssw0rd1" -AsPlainText -Force) `
+    -SafeModeAdministratorPassword (ConvertTo-SecureString "<<PASSWORD>>" -AsPlainText -Force) `
     -Confirm:$false
