@@ -19,6 +19,16 @@ Set-VMMemory -VMName $config.VMName `
 Set-VM -Name $config.VMName -AutomaticStartAction $config.AutomaticStartAction
 Set-VM -Name $config.VMName -AutomaticCheckpointsEnabled $config.AutomaticCheckpointsEnabled
 
+# Enable TPM if requested
+if ($config.Security.EnableTPM) {
+    try {
+        Enable-VMTPM -VMName $config.VMName
+        Write-Host "Trusted Platform Module enabled for '$($config.VMName)'."
+    } catch {
+        Write-Error "Failed to enable TPM: $_"
+    }
+}
+
 # Create and attach differencing disk
 if ($config.DifferencingDisk) {
     $disk = $config.DifferencingDisk
@@ -39,4 +49,4 @@ if ($config.DifferencingDisk) {
                         -Path $disk.Path
 }
 
-Write-Host "VM '$($config.VMName)' deployed successfully with differencing disk attached."
+Write-Host "VM '$($config.VMName)' deployed successfully with TPM and differencing disk attached."

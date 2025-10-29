@@ -16,10 +16,10 @@ try {
 }
 
 # Define network settings
-$nicName = "vinternal"
-$ipAddress = "192.168.10.2"
-$prefixLength = 24  # Subnet mask 255.255.255.0
-$gateway = "192.168.10.1"
+$nicName = "<<NAME>>"
+$ipAddress = "<<IP ADDRESS>>"
+$prefixLength = <<SUBNETMASK INTEGER>>  # Subnet mask 255.255.255.0
+$gateway = "<<GATEWAY"
 $dnsServer = "127.0.0.0"
 
 try {
@@ -40,8 +40,8 @@ try {
 
 # Set time zone to Eastern Standard Time
 try {
-    Set-TimeZone -Id "Eastern Standard Time"
-    Write-Host "Time zone set to Eastern Standard Time."
+    Set-TimeZone -Id "<<TIME ZONE>>"
+    Write-Host "Time zone set to <<TIME ZONE>>."
 } catch {
     Write-Error "Failed to set time zone: $_"
 }
