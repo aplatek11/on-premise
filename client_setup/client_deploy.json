@@ -1,20 +1,20 @@
 {
   "VMName": "CLIENT",
-  "VMPath": "V:\\VM\\client_hd",
+  "VMPath": "V:\\VM",
   "Generation": 2,
   "MemoryStartupBytes": 4294967296,
   "DynamicMemoryEnabled": true,
   "SwitchName": "vInternal",
   "ProcessorCount": 4,
-  "AutomaticStartAction": "Nothing",
   "AutomaticCheckpointsEnabled": false,
   "Security": {
-    "EnableTPM": true
+    "EnableTPM": true,
+    "KeyProtectorOwner": "CLIENT"
   },
   "DifferencingDisk": {
-    "Name": "client.vhdx",
-    "Path": "V:\\Disk_Image\\client_hd.vhdx",
-    "ParentPath": "V:\\Parent_Image\\win11_hd.vhdx",
+    "Name": "client_hd.vhdx",
+    "Path": "v:\\Disk_Image\\client_hd.vhdx",
+    "ParentPath": "v:\\Parent_Image\\sysprep_win11.vhdx",
     "ControllerType": "SCSI",
     "ControllerNumber": 0,
     "ControllerLocation": 0
